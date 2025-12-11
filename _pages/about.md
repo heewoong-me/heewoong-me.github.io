@@ -32,7 +32,7 @@ My primary research interest lies in developing scalable reinforcement learning 
 Recently, I have been interested in extending the domain by leveraging offline RL to train large language models (LLMs) in multi-turn settings.
 
 <p align="center">
-  <a href="heewoong_cv.pdf" target="_blank" style="text-decoration: none;">
+  <a href="assets/pdf/heewoong_cv.pdf" target="_blank" style="text-decoration: none;">
     <i class="ai ai-cv" style="font-size: 30px;"></i>
   </a>
   &nbsp;&nbsp;&nbsp;

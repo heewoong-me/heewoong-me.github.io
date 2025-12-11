@@ -13,7 +13,7 @@
     paper: "https://assets-eu.researchsquare.com/files/rs-6363017/v1_covered_2c018500-762c-4374-9ea3-79ff95004862.pdf?c=1765381029"
 
 - title: "Listwise Reward Estimation for Offline Preference-based Reinforcement Learning"
-  authors: ["Heewoong Choi", "Sangwoon Jung", "Hongjoon Ahn", "Taesup Moon"]
+  authors: ["Heewoong Choi", "Sangwon Jung", "Hongjoon Ahn", "Taesup Moon"]
   status: "ICML 2024"
   links:
     paper: "https://arxiv.org/abs/2408.04190"
