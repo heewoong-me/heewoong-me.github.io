@@ -7,11 +7,11 @@
         <td class="p-0 pl-2" style="vertical-align: top;">
           <div>{{ item.position }}</div>
           {% if item.description %}
-            <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 1.2rem; font-size: 0.95rem; color: black;">
-                {% for desc in item.description %}
-                <li>{{ desc }}</li>
-                {% endfor %}
-            </ul>
+            <div style="margin-top: 5px; margin-bottom: 0; font-size: 0.95rem; color: black;">
+              {% for desc in item.description %}
+                <div>{{ desc }}</div>
+              {% endfor %}
+            </div>
           {% endif %}
         </td>
       </tr>
