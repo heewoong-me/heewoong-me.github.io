@@ -44,21 +44,47 @@ layout: default
     <!--
     {% if page.announcements and page.announcements.enabled %}
       <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
     -->
 
+    <!-- Education -->
+    <h2>
+      <span>Education</span>
+    </h2>
+    {% include education.liquid %}
+    <br>
+
     <!-- Publications -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
-    {% endif %}
+    <h2>
+      <span>Publications</span>
+    </h2>
+      <div class="equal-contrib-note" style="font-size: 0.9rem; margin-top: 0.5rem; margin-bottom: 0.5rem;">
+
+      (*: equal contribution)
+    </div>
+
+    {% include publications.liquid %}
+    <br>
+
+    <!-- Work Experience -->
+    <h2>
+      <span>Work Experience</span>
+    </h2>
+    {% include work.liquid %}
+    <br>
+
+    <!-- Honors -->
+    <h2>
+      <span>Honors</span>
+    </h2>
+    {% include honors.liquid %}
+    <br>
 
     <!-- Social -->
+    <!-- 
     {% if page.social %}
       <div class="social">
         <div class="contact-icons">{% include social.liquid %}</div>
@@ -66,6 +92,7 @@ layout: default
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
     {% endif %}
+    -->
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
       {% include newsletter.liquid center=true %}

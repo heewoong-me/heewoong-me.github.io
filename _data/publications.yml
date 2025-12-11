@@ -1,0 +1,27 @@
+- title: "Option-aware Temporally Abstracted Value for Offline Goal-Conditioned Reinforcement Learning"
+  authors: ["Hongjoon Ahn*", "Heewoong Choi*", "Jisu Han*", "Taesup Moon"]
+  status: "NeurIPS 2025 (Spotlight)"
+  links:
+    paper: "https://openreview.net/pdf?id=gfXBNBKx02"
+    code: "https://github.com/ota-v/ota-v"
+    project_page: "https://ota-v.github.io/"
+
+- title: "Genomic Data Classification via Universal Compression"
+  authors: ["Yasmine Omri", "Naomi Sagan", "Eugene Min", "Heewoong Choi", "Taesup Moon", "Tsachy Weissman"]
+  status: "ISMB/ECCB 2025"
+  links:
+    paper: "https://assets-eu.researchsquare.com/files/rs-6363017/v1_covered_2c018500-762c-4374-9ea3-79ff95004862.pdf?c=1765381029"
+
+- title: "Listwise Reward Estimation for Offline Preference-based Reinforcement Learning"
+  authors: ["Heewoong Choi", "Sangwoon Jung", "Hongjoon Ahn", "Taesup Moon"]
+  status: "ICML 2024"
+  links:
+    paper: "https://arxiv.org/abs/2408.04190"
+    code: "https://github.com/chwoong/LiRE"
+    project_page: "https://sites.google.com/view/lire-opbrl"
+
+- title: "NCIS: Neural Contextual Iterative Smoothing for Purifying Adversarial Perturbations"
+  authors: ["Sungmin Cha", "Naeun Ko", "Heewoong Choi", "Youngjoon Yoo", "Taesup Moon"]
+  status: "WACV 2024"
+  links:
+    paper: "https://openaccess.thecvf.com/content/WACV2024/papers/Cha_NCIS_Neural_Contextual_Iterative_Smoothing_for_Purifying_Adversarial_Perturbations_WACV_2024_paper.pdf"
