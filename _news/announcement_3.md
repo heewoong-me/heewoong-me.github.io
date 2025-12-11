@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2025-12-25
+date: 2025-10-28
 inline: true
 related_posts: false
 ---
 
-1 paper ["Option-aware Temporally Abstracted Value for Offline Goal-Conditioned Reinforcement Learning"]((https://openreview.net/pdf?id=gfXBNBKx02)) was accepted to [NeurIPS 2025](https://neurips.cc/) as a spotlight.
+I gave a talk at the [Open AGI Symposium](https://luma.com/y8qldicf?tk=SR3JiC).

@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2025-10-01
+date: 2025-09-18
 inline: true
 related_posts: false
 ---
 
-I gave a talk at the [SNU Workshop on Perception and Intelligence](https://3d.snu.ac.kr/workshop/workshop251001).
+1 paper ["Option-aware Temporally Abstracted Value for Offline Goal-Conditioned Reinforcement Learning"]((https://openreview.net/pdf?id=gfXBNBKx02)) was accepted to [NeurIPS 2025](https://neurips.cc/) as a spotlight.
