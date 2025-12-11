@@ -384,14 +384,14 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-i-gave-a-talk-at-the-snu-workshop-on-perception-and-intelligence",
+            },},{id: "news-1-paper-option-aware-temporally-abstracted-value-for-offline-goal-conditioned-reinforcement-learning-was-accepted-to-neurips-2025-as-a-spotlight",
+          title: '1 paper “Option-aware Temporally Abstracted Value for Offline Goal-Conditioned Reinforcement Learning” was accepted...',
+          description: "",
+          section: "News",},{id: "news-i-gave-a-talk-at-the-snu-workshop-on-perception-and-intelligence",
           title: 'I gave a talk at the SNU Workshop on Perception and Intelligence.',
           description: "",
           section: "News",},{id: "news-i-gave-a-talk-at-the-open-agi-symposium",
           title: 'I gave a talk at the Open AGI Symposium.',
-          description: "",
-          section: "News",},{id: "news-1-paper-option-aware-temporally-abstracted-value-for-offline-goal-conditioned-reinforcement-learning-was-accepted-to-neurips-2025-as-a-spotlight",
-          title: '1 paper “Option-aware Temporally Abstracted Value for Offline Goal-Conditioned Reinforcement Learning” was accepted...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
