@@ -1,0 +1,56 @@
+<style>
+  /* 평소 상태 */
+  a.author-link {
+    color: black !important;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  /* 마우스 올렸을 때 (Hover) 상태 - 원하시는 파란색 */
+  a.author-link:hover {
+    color: #3a66c0 !important;
+    text-decoration: underline;
+  }
+</style>
+
+{% assign pubs = site.data.publications %}
+{% assign authors_links = site.data.authors %}
+{% assign total = pubs | size %}
+
+{% for pub in pubs %}
+  <div class="publication-item" style="margin-bottom: 1.2rem;">
+    <h5 style="font-size: 1.2rem; margin-bottom: 0.3rem; font-weight: 390;">
+      [C{{ total | minus: forloop.index0 }}] {{ pub.title }}
+    </h5>
+
+    <div class="authors" style="font-size: 0.95rem; margin-left: 1rem;">
+    {% for author in pub.authors %}
+        {% assign key = author | replace: " ", "" | replace: "*", "" %}
+        {% assign is_target = false %}
+        {% if key == "HeewoongChoi" %}
+            {% assign is_target = true %}
+        {% endif %}
+        {% assign specific_style = "" %}
+        {% if is_target %}
+            {% assign specific_style = "font-weight: bold; font-style: italic;" %}
+        {% endif %}
+
+        {% if authors_links[key] %}
+            <a href="{{ authors_links[key] }}" target="_blank" class="author-link" style="{{ specific_style }}">{{ author }}</a>{% unless forloop.last %}, {% endunless %}
+        {% else %}
+            <span style="color: black; {{ specific_style }}">{{ author }}</span>{% unless forloop.last %}, {% endunless %}
+        {% endif %}
+    {% endfor %}
+    </div>
+
+    <div class="pub-status" style="font-weight: bold; font-size: 0.95rem; margin-left: 1rem;">
+      {{ pub.status }}
+    </div>
+
+    <div class="pub-links" style="font-size: 0.95rem; margin-left: 1rem;">
+        {% if pub.links.paper %}<a href="{{ pub.links.paper }}">paper</a>{% endif %}
+        {% if pub.links.code %} | <a href="{{ pub.links.code }}">code</a>{% endif %}
+        {% if pub.links.project_page %} | <a href="{{ pub.links.project_page }}">project page</a>{% endif %}
+    </div>
+  </div>
+{% endfor %}

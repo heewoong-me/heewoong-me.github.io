@@ -1,0 +1,18 @@
+{% assign education = site.data.education %}
+
+<div class="education">
+  <table class="table table-sm table-borderless">
+    {% for edu in education %}
+      <tr>
+        <td class="p-0 pr-2 font-weight-bold" style="width: 20%; vertical-align: top;">{{ edu.year }}</td>
+        <td class="p-0 pl-2" style="vertical-align: top;">
+          <div><b>{{ edu.institution }}</b></div>
+          <div>{{ edu.degree }}</div>
+          {% if edu.description %}
+            <div style="font-size: 0.9em; color: #666;">{{ edu.description }}</div>
+          {% endif %}
+        </td>
+      </tr>
+    {% endfor %}
+  </table>
+</div>
