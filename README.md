@@ -46,6 +46,22 @@ docker compose up
 Then open <http://localhost:8080>. The site rebuilds automatically as you edit
 files. Stop with `Ctrl-C` (or `docker compose down`).
 
+## Colors & fonts
+
+Colors are defined as Sass variables in `_sass/_variables.scss` and wired to CSS
+custom properties in `_sass/_themes.scss`.
+
+| To change… | Edit |
+| --- | --- |
+| Accent color — links, hover, highlights (currently blue `#3a66c0`) | `$my-color` in `_sass/_variables.scss` |
+| Default body text color | `$black-color` in `_sass/_variables.scss` (used by `--global-text-color` in `_sass/_themes.scss`) |
+| Muted / secondary text color | `$grey-color` in `_sass/_variables.scss` |
+
+One exception: the **publication author links** have their color hardcoded in the
+`<style>` block at the top of `_includes/publications.liquid`
+(`a.author-link` normal + `:hover`), not driven by the Sass variables — edit it
+there.
+
 ## Deployment
 
 Pushing to `main` triggers `.github/workflows/deploy.yml`, which builds the site
