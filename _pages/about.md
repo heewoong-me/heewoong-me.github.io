@@ -25,11 +25,11 @@ publications:
 
 ---
 
-I'm a Ph.D. student at Seoul National University advised by [Taesup Moon](https://mindlab-snu.notion.site/taesup-moon).
+I'm a Ph.D. student at Seoul National University, advised by [Taesup Moon](https://mindlab-snu.notion.site/taesup-moon).
 
-My primary research interest lies in developing scalable reinforcement learning (RL) algorithms, focusing on (1) improving performance as more data becomes available and (2) enabling generalization over long horizons.
+I aim to build adaptive AI agents that reason, plan, and act reliably in the real world. I approach this through reinforcement learning, world models, and self-evolving agents.
 
-Recently, I have been interested in extending the domain by leveraging offline RL to train large language models (LLMs) in multi-turn settings.
+My earlier work focused on scalable RL algorithms that improve with more data and generalize over long horizons.
 
 <p align="center">
   <a href="assets/pdf/heewoong_cv.pdf" target="_blank" style="text-decoration: none;">
