@@ -1496,3 +1496,21 @@ figure.cover {
 mjx-container[jax="CHTML"][display="true"] {
   overflow-x: auto;
 }
+
+// news: collapsible "Read more" block inside an inline news item
+.news-details {
+  margin-top: 0.25rem;
+  summary {
+    cursor: pointer;
+    color: var(--global-text-color);
+    font-size: 0.9em;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.news-details-body {
+  margin-top: 0.5rem;
+  font-size: 0.9em;
+  line-height: 1.6;
+}

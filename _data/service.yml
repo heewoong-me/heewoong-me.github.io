@@ -1,0 +1,13 @@
+# Single source for the "Academic Service" section on the homepage AND in the CV.
+# Homepage: _includes/service.liquid reads this directly.
+# CV:       tools/gen-service-tex.py turns it into service.tex in the Overleaf clone.
+# Fill in venues/years; keep the shape below.
+
+conferences:
+  - venue: NeurIPS
+    years: [2026]
+
+journals: []
+
+awards:
+  - text: "Top Reviewer: NeurIPS 2026"
