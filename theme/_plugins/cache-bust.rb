@@ -25,8 +25,8 @@ module Jekyll
       end
 
       def file_content
-        # Accept any site-relative path (assets/..., content/...), not only assets/
-        idx = file_name.index('assets/')
+        # Accept any site-relative path (theme/assets/..., content/...)
+        idx = file_name.index('theme/assets/')
         local_file_name = idx ? file_name.slice(idx..-1) : file_name.sub(%r{^/}, '')
         File.read(local_file_name)
       end
@@ -45,7 +45,7 @@ module Jekyll
     end
 
     def bust_css_cache(file_name)
-      CacheDigester.new(file_name: file_name, directory: 'assets/_sass').digest!
+      CacheDigester.new(file_name: file_name, directory: 'theme/_sass').digest!
     end
   end
 end

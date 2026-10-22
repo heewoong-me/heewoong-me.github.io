@@ -1528,8 +1528,12 @@ mjx-container[jax="CHTML"][display="true"] {
   }
   .nav-link {
     font-size: 0.95rem;
+    font-weight: 400;
     padding-left: 0.6rem;
     padding-right: 0.6rem;
+  }
+  .navbar-nav .nav-item.active > .nav-link {
+    font-weight: 400;
   }
 }
 
@@ -1591,5 +1595,23 @@ footer.sticky-bottom {
     width: 55%;
     margin: 0 auto 1rem;
     float: none !important;
+  }
+}
+
+// name on the About page: medium weight (500), centered over the text column (photo is 26% wide)
+.post .post-title .site-name {
+  font-weight: 500;
+}
+// name and contact-icon row share one centering box over the text column
+// (text column is ~72%; a bit narrower so the ragged-right paragraphs look balanced)
+$title-box-width: 64%;
+.post .contact-icons {
+  text-align: center;
+}
+@media (min-width: 576px) {
+  .post .post-header,
+  .post .contact-icons {
+    width: $title-box-width;
+    text-align: center;
   }
 }

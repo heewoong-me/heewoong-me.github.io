@@ -31,7 +31,7 @@ I aim to build adaptive AI agents that reason, plan, and act reliably in the rea
 
 My earlier work focused on scalable RL algorithms that improve with more data and generalize over long horizons.
 
-<p align="center">
+<p class="contact-icons">
   <a href="content/cv.pdf" target="_blank" style="text-decoration: none;">
     <i class="ai ai-cv" style="font-size: 30px;"></i>
   </a>

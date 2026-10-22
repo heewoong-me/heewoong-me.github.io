@@ -11,11 +11,10 @@ keywords: Heewoong Choi, reinforcement learning, offline RL, goal-conditioned RL
 footer_text:
 contact_note:
 lang: en
-icon: 🔎 # emoji used as the favicon (or an image filename in /assets/img/)
 
 url: https://heewoong-me.github.io
 baseurl: # subpath of the site, e.g. /blog/. Leave blank for root.
-last_updated: false # footer "last updated" line
+last_updated: true # footer "last updated" line (pages can opt out with hide_footer: true)
 impressum_path:
 
 # -----------------------------------------------------------------------------
@@ -79,11 +78,16 @@ kramdown:
       start_line: 1
 
 sass:
+  sass_dir: theme/_sass
   style: compressed
 
-# All personal content (about page, news, data, CV, photo) lives in content/
+# All personal content (about page, news, data, CV, photo) lives in content/;
+# everything that makes the site render (layouts, includes, sass, plugins, css/js/fonts) lives in theme/.
 collections_dir: content
 data_dir: content/data
+layouts_dir: theme/_layouts
+includes_dir: theme/_includes
+plugins_dir: theme/_plugins
 include: ["_scripts"]
 exclude:
   - LICENSE
@@ -117,7 +121,7 @@ defaults:
       sitemap: false
 
 jekyll-minifier:
-  exclude: ["robots.txt", "assets/js/search/*.js"]
+  exclude: ["robots.txt"]
 
 # -----------------------------------------------------------------------------
 # Assets & third-party libraries (consumed by _includes/head.liquid,

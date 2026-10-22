@@ -6,7 +6,7 @@ The source for my personal academic homepage, live at
 It is a **stripped-down [al-folio](https://github.com/alshedivat/al-folio)**
 site: I kept only what a two-page **About + News** homepage needs and removed
 the theme's blog, projects, bibliography, CV and demo content. The About page
-is assembled by `_layouts/about.liquid` from a handful of small data files, so
+is assembled by `theme/_layouts/about.liquid` from a handful of small data files, so
 updating the site is mostly editing YAML.
 
 ## What lives where
@@ -28,7 +28,7 @@ Everything on the site is edited from one of these files:
 
 A couple of behaviors worth knowing:
 
-- **Publications** are rendered by `_includes/publications.liquid`, not the al-folio
+- **Publications** are rendered by `theme/_includes/publications.liquid`, not the al-folio
   bibliography engine. It auto-numbers entries `[C1], [C2], …` (newest first) and
   **bolds my own name**. Any co-author whose key exists in `content/data/authors.yml` is
   linked to their homepage.
@@ -48,17 +48,18 @@ files. Stop with `Ctrl-C` (or `docker compose down`).
 
 ## Colors & fonts
 
-Colors are defined as Sass variables in `_sass/_variables.scss` and wired to CSS
-custom properties in `_sass/_themes.scss`.
+Colors are defined as Sass variables in `theme/_sass/_variables.scss` and wired to CSS
+custom properties in `theme/_sass/_themes.scss`.
 
 | To change… | Edit |
 | --- | --- |
-| Accent color — links, hover, highlights (currently blue `#3a66c0`) | `$my-color` in `_sass/_variables.scss` |
-| Default body text color | `$black-color` in `_sass/_variables.scss` (used by `--global-text-color` in `_sass/_themes.scss`) |
-| Muted / secondary text color | `$grey-color` in `_sass/_variables.scss` |
+| Accent color — links, hover, highlights (currently blue `#3a66c0`) | `$my-color` in `theme/_sass/_variables.scss` |
+| Favicon (same blue, white initial) | `content/favicon.svg` — update its `fill` if the accent color changes; the CV uses the same RGB 58,102,192 |
+| Default body text color | `$black-color` in `theme/_sass/_variables.scss` (used by `--global-text-color` in `theme/_sass/_themes.scss`) |
+| Muted / secondary text color | `$grey-color` in `theme/_sass/_variables.scss` |
 
 One exception: the **publication author links** have their color hardcoded in the
-`<style>` block at the top of `_includes/publications.liquid`
+`<style>` block at the top of `theme/_includes/publications.liquid`
 (`a.author-link` normal + `:hover`), not driven by the Sass variables — edit it
 there.
 

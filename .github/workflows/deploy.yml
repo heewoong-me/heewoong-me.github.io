@@ -6,9 +6,8 @@ on:
       - master
       - main
     paths:
-      - "assets/**"
+      - "theme/**"
       - "content/**"
-      - "_sass/**"
       - "**.bib"
       - "**.html"
       - "**.js"
@@ -23,9 +22,8 @@ on:
       - master
       - main
     paths:
-      - "assets/**"
+      - "theme/**"
       - "content/**"
-      - "_sass/**"
       - "**.bib"
       - "**.html"
       - "**.js"
