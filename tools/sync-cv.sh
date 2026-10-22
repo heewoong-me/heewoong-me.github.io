@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Sync the CV between Overleaf, the local clone, and assets/pdf/heewoong_cv.pdf.
+# Sync the CV between Overleaf, the local clone, and content/cv.pdf.
 #
 #   tools/sync-cv.sh            ol pull (Overleaf → local) → compile → copy PDF into the site
 #   tools/sync-cv.sh --push     commit local .tex edits, ol push (local → Overleaf), then compile + copy
@@ -13,7 +13,7 @@ SITE_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 CV_DIR="${CV_DIR:-$HOME/project/personal/heewoong-cv}"
 TEX_IMAGE="${TEX_IMAGE:-texlive/texlive:latest-full}"
 MAIN_TEX="${MAIN_TEX:-main.tex}"
-TARGET="$SITE_DIR/assets/pdf/heewoong_cv.pdf"
+TARGET="$SITE_DIR/content/cv.pdf"
 OL="${OL:-$HOME/.local/bin/ol}"
 
 COMMIT=0; PUSH=0
@@ -41,7 +41,7 @@ else
   "$OL" pull
 fi
 
-# 2. regenerate service.tex from _data/service.yml (single source with the homepage)
+# 2. regenerate service.tex from content/data/service.yml (single source with the homepage)
 CV_DIR="$CV_DIR" python3 "$SITE_DIR/tools/gen-service-tex.py"
 
 # 3. compile in Docker (output to build/, keeps the clone clean)
@@ -62,7 +62,7 @@ echo ">>> updated $TARGET"
 
 if [ "$COMMIT" = 1 ]; then
   cd "$SITE_DIR"
-  git add assets/pdf/heewoong_cv.pdf
+  git add content/cv.pdf
   git commit -m "Update CV from Overleaf"
   echo ">>> committed"
 fi

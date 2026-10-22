@@ -17,7 +17,7 @@ layout: default
     {% if page.profile %}
       <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
         {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+          {% assign profile_image_path = page.profile.image | prepend: 'content/' %}
           {% if page.profile.image_circular %}
             {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
           {% else %}
@@ -54,7 +54,6 @@ layout: default
       <span>Education</span>
     </h2>
     {% include education.liquid %}
-    <br>
 
     <!-- Publications -->
     <h2>
@@ -66,42 +65,25 @@ layout: default
     </div>
 
     {% include publications.liquid %}
-    <br>
 
     <!-- Work Experience -->
     <h2>
       <span>Work Experience</span>
     </h2>
     {% include work.liquid %}
-    <br>
 
     <!-- Honors -->
     <h2>
       <span>Honors</span>
     </h2>
     {% include honors.liquid %}
-    <br>
 
     <!-- Academic Service -->
     <h2>
       <span>Academic Service</span>
     </h2>
     {% include service.liquid %}
-    <br>
 
-    <!-- Social -->
-    <!-- 
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
 
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
-    {% endif %}
-    -->
-
-    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-      {% include newsletter.liquid center=true %}
-    {% endif %}
   </article>
 </div>

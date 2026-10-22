@@ -16,21 +16,21 @@ Everything on the site is edited from one of these files:
 | To change… | Edit |
 | --- | --- |
 | Name, site URL, description, feature toggles | `_config.yml` |
-| Intro paragraph + the contact/CV/social icon row | `_pages/about.md` |
-| Profile photo | `assets/img/my_pic.png` |
-| CV PDF (linked from the icon row) | `assets/pdf/heewoong_cv.pdf` |
-| Education entries | `_data/education.yml` |
-| Publications | `_data/publications.yml` |
-| Co-author homepage links (for publication author names) | `_data/authors.yml` |
-| Work experience | `_data/work.yml` |
-| Honors | `_data/honors.yml` |
+| Intro paragraph + the contact/CV/social icon row | `content/about.md` |
+| Profile photo | `content/photo.png` |
+| CV PDF (linked from the icon row) | `content/cv.pdf` |
+| Education entries | `content/data/education.yml` |
+| Publications | `content/data/publications.yml` |
+| Co-author homepage links (for publication author names) | `content/data/authors.yml` |
+| Work experience | `content/data/work.yml` |
+| Honors | `content/data/honors.yml` |
 | News items (shown on About and `/news/`) | `_news/*.md` |
 
 A couple of behaviors worth knowing:
 
 - **Publications** are rendered by `_includes/publications.liquid`, not the al-folio
   bibliography engine. It auto-numbers entries `[C1], [C2], …` (newest first) and
-  **bolds my own name**. Any co-author whose key exists in `_data/authors.yml` is
+  **bolds my own name**. Any co-author whose key exists in `content/data/authors.yml` is
   linked to their homepage.
 - **News items** render inline; they are set to `output: false` in `_config.yml`, so
   no standalone `/news/<item>/` pages are generated.

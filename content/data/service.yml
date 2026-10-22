@@ -1,4 +1,5 @@
 # Single source for the "Academic Service" section on the homepage AND in the CV.
+# (lives in content/data; Jekyll data_dir points here)
 # Homepage: _includes/service.liquid reads this directly.
 # CV:       tools/gen-service-tex.py turns it into service.tex in the Overleaf clone.
 # Fill in venues/years; keep the shape below.

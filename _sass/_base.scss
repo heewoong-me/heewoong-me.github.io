@@ -1514,3 +1514,82 @@ mjx-container[jax="CHTML"][display="true"] {
   font-size: 0.9em;
   line-height: 1.6;
 }
+
+// ---------------------------------------------------------------------------
+// Site-specific overrides: quieter chrome, tighter type (keeps Roboto + accent)
+// ---------------------------------------------------------------------------
+.navbar.navbar-light {
+  opacity: 1;
+  border-bottom: 1px solid var(--global-divider-color);
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  .navbar-brand.title {
+    font-size: 1rem;
+  }
+  .nav-link {
+    font-size: 0.95rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+  }
+}
+
+.post {
+  .post-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    margin-top: 2.2rem;
+    margin-bottom: 0.8rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .profile {
+    width: 26%;
+  }
+}
+.profile img {
+  box-shadow: none !important;
+}
+
+footer.sticky-bottom {
+  border-top: none;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 0.8rem;
+  color: var(--global-text-color-light);
+  .container {
+    text-align: center;
+  }
+  a {
+    color: inherit;
+  }
+}
+
+// date columns in Education / Work / Honors never wrap
+.education,
+.work,
+.honors {
+  td:first-child {
+    width: 1% !important;
+    white-space: nowrap;
+    padding-right: 1.5rem !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .education,
+  .work,
+  .honors {
+    td:first-child {
+      width: 32% !important;
+      white-space: normal;
+      padding-right: 0.75rem !important;
+    }
+  }
+  .profile {
+    width: 55%;
+    margin: 0 auto 1rem;
+    float: none !important;
+  }
+}

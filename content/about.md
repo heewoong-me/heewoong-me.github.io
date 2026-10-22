@@ -5,7 +5,7 @@ permalink: /
 
 profile:
   align: right
-  image: my_pic.png
+  image: photo.png
   image_circular: false # crops the image to make it circular
   # more_info: >
   #   <p>555 your office number</p>
@@ -18,7 +18,7 @@ social: true # includes social icons at the bottom of the page
 announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 3 # leave blank to include all the news in the `_news` folder
+  limit: 3 # leave blank to include all the news in `content/_news`
 
 publications:
   enabled: false # includes a list of publications
@@ -32,7 +32,7 @@ I aim to build adaptive AI agents that reason, plan, and act reliably in the rea
 My earlier work focused on scalable RL algorithms that improve with more data and generalize over long horizons.
 
 <p align="center">
-  <a href="assets/pdf/heewoong_cv.pdf" target="_blank" style="text-decoration: none;">
+  <a href="content/cv.pdf" target="_blank" style="text-decoration: none;">
     <i class="ai ai-cv" style="font-size: 30px;"></i>
   </a>
   &nbsp;&nbsp;&nbsp;

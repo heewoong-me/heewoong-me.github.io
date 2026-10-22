@@ -25,7 +25,9 @@ module Jekyll
       end
 
       def file_content
-        local_file_name = file_name.slice((file_name.index('assets/')..-1))
+        # Accept any site-relative path (assets/..., content/...), not only assets/
+        idx = file_name.index('assets/')
+        local_file_name = idx ? file_name.slice(idx..-1) : file_name.sub(%r{^/}, '')
         File.read(local_file_name)
       end
 

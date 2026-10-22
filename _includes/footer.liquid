@@ -1,5 +1,4 @@
 {% capture footer_contents %}
-  <a href="https://github.com/alshedivat/al-folio">Template</a>.
   {{ site.footer_text }}
   {% if site.impressum_path %}
     <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
@@ -17,10 +16,6 @@
   </footer>
 {% else %}
   <footer class="sticky-bottom mt-5" role="contentinfo">
-    {% if site.newsletter.enabled %}
-      {% include newsletter.liquid %}
-    {% endif %}
-
     <div class="container">
       {{ footer_contents }}
     </div>
